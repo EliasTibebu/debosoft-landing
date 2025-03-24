@@ -9,6 +9,9 @@ export const metadata = {
   title: "Debosoft - Innovative Software Solutions",
   description:
     "Debosoft delivers cutting-edge technology solutions that transform your business operations and drive growth.",
+  icons: {
+    icon: "/favicon.ico",
+  },
     generator: 'v0.dev'
 }
 

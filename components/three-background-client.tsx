@@ -72,10 +72,10 @@ export default function ThreeBackgroundClient() {
       }
 
       // Create three particle groups representing "work together, grow together, expand together"
-      // Using the new primary color #039fbb and variations
-      const group1 = createParticleGroup("#039fbb", 200, 4, 0.005, -2) // Work together (primary teal)
-      const group2 = createParticleGroup("#04b8dd", 200, 6, 0.003, 0) // Grow together (lighter teal)
-      const group3 = createParticleGroup("#027a91", 200, 8, 0.002, 2) // Expand together (darker teal)
+      // Using the new primary color #2563EB and variations
+      const group1 = createParticleGroup("#2563EB", 200, 4, 0.005, -2) // Work together (primary blue)
+      const group2 = createParticleGroup("#3B82F6", 200, 6, 0.003, 0) // Grow together (lighter blue)
+      const group3 = createParticleGroup("#1D4ED8", 200, 8, 0.002, 2) // Expand together (darker blue)
 
       scene.add(group1.group)
       scene.add(group2.group)
@@ -83,7 +83,7 @@ export default function ThreeBackgroundClient() {
 
       // Create connecting lines between particles (representing connections)
       const lineMaterial = new THREE.LineBasicMaterial({
-        color: 0x039fbb,
+        color: 0x2563eb,
         transparent: true,
         opacity: 0.2,
       })
@@ -99,9 +99,9 @@ export default function ThreeBackgroundClient() {
 
         // Get all particle positions
         const allParticles = [
-          { particles: group1.particles, color: "#039fbb" },
-          { particles: group2.particles, color: "#04b8dd" },
-          { particles: group3.particles, color: "#027a91" },
+          { particles: group1.particles, color: "#2563EB" },
+          { particles: group2.particles, color: "#3B82F6" },
+          { particles: group3.particles, color: "#1D4ED8" },
         ]
 
         let connectionCount = 0
@@ -143,7 +143,7 @@ export default function ThreeBackgroundClient() {
 
                   const opacity = 1 - distance / maxConnectionDistance
                   const lineMat = new THREE.LineBasicMaterial({
-                    color: 0x039fbb,
+                    color: 0x2563eb,
                     transparent: true,
                     opacity: opacity * 0.2,
                   })

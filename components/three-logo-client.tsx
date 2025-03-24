@@ -41,7 +41,7 @@ export default function ThreeLogoClient() {
       // Add a subtle background gradient sphere
       const backgroundSphereGeometry = new THREE.SphereGeometry(15, 32, 32)
       const backgroundSphereMaterial = new THREE.MeshBasicMaterial({
-        color: 0x039fbb,
+        color: 0x2563eb,
         transparent: true,
         opacity: 0.05,
         side: THREE.BackSide,
@@ -50,7 +50,7 @@ export default function ThreeLogoClient() {
       scene.add(backgroundSphere)
 
       // Add a subtle grid for depth perception
-      const gridHelper = new THREE.GridHelper(20, 20, 0x039fbb, 0x027a91)
+      const gridHelper = new THREE.GridHelper(20, 20, 0x2563eb, 0x1d4ed8)
       gridHelper.position.y = -3
       gridHelper.material.transparent = true
       gridHelper.material.opacity = 0.1
@@ -76,7 +76,7 @@ export default function ThreeLogoClient() {
 
       const bgParticlesMaterial = new THREE.PointsMaterial({
         size: 0.02,
-        color: new THREE.Color("#039fbb"),
+        color: new THREE.Color("#2563EB"),
         transparent: true,
         opacity: 0.3,
         blending: THREE.AdditiveBlending,
@@ -90,21 +90,21 @@ export default function ThreeLogoClient() {
       const sphereGeometry2 = new THREE.SphereGeometry(0.4, 32, 32)
       const sphereGeometry3 = new THREE.SphereGeometry(0.3, 32, 32)
 
-      // Updated colors to match the new primary color #039fbb and variations
+      // Updated colors to match the new primary color #2563EB and variations
       const sphereMaterial1 = new THREE.MeshStandardMaterial({
-        color: 0x039fbb, // Primary teal
+        color: 0x2563eb, // Primary blue
         roughness: 0.3,
         metalness: 0.7,
       })
 
       const sphereMaterial2 = new THREE.MeshStandardMaterial({
-        color: 0x04b8dd, // Lighter teal
+        color: 0x3b82f6, // Lighter blue
         roughness: 0.3,
         metalness: 0.7,
       })
 
       const sphereMaterial3 = new THREE.MeshStandardMaterial({
-        color: 0x027a91, // Darker teal
+        color: 0x1d4ed8, // Darker blue
         roughness: 0.3,
         metalness: 0.7,
       })
@@ -135,12 +135,12 @@ export default function ThreeLogoClient() {
         sphere.add(glow)
       }
 
-      addGlow(sphere1, 0x039fbb, 0.5)
-      addGlow(sphere2, 0x04b8dd, 0.4)
-      addGlow(sphere3, 0x027a91, 0.3)
+      addGlow(sphere1, 0x2563eb, 0.5)
+      addGlow(sphere2, 0x3b82f6, 0.4)
+      addGlow(sphere3, 0x1d4ed8, 0.3)
 
       // Create connecting lines between spheres (representing working together)
-      const lineMaterial = new THREE.LineBasicMaterial({ color: 0x039fbb, transparent: true, opacity: 0.7 }) // Updated to new primary color
+      const lineMaterial = new THREE.LineBasicMaterial({ color: 0x2563eb, transparent: true, opacity: 0.7 }) // Updated to new primary color
 
       // Line from sphere1 to sphere2 (work together)
       const line1Geometry = new THREE.BufferGeometry().setFromPoints([
@@ -199,7 +199,7 @@ export default function ThreeLogoClient() {
 
       const particlesMaterial = new THREE.PointsMaterial({
         size: 0.03,
-        color: new THREE.Color("#039fbb"), // Updated to new primary color
+        color: new THREE.Color("#2563EB"), // Updated to new primary color
         transparent: true,
         opacity: 0.6,
         blending: THREE.AdditiveBlending,
@@ -218,15 +218,15 @@ export default function ThreeLogoClient() {
       scene.add(directionalLight)
 
       // Add point lights near each sphere for better illumination
-      const pointLight1 = new THREE.PointLight(0x039fbb, 1, 10) // Updated to new primary color
+      const pointLight1 = new THREE.PointLight(0x2563eb, 1, 10) // Updated to new primary color
       pointLight1.position.set(-1, 0, 2)
       scene.add(pointLight1)
 
-      const pointLight2 = new THREE.PointLight(0x04b8dd, 1, 10) // Updated to lighter teal
+      const pointLight2 = new THREE.PointLight(0x3b82f6, 1, 10) // Updated to lighter blue
       pointLight2.position.set(1, 0, 2)
       scene.add(pointLight2)
 
-      const pointLight3 = new THREE.PointLight(0x027a91, 1, 10) // Updated to darker teal
+      const pointLight3 = new THREE.PointLight(0x1d4ed8, 1, 10) // Updated to darker blue
       pointLight3.position.set(0, 1.5, 2)
       scene.add(pointLight3)
 
