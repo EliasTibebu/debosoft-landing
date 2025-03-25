@@ -274,7 +274,7 @@ export default function AboutUsPage() {
                     </div>
                     <div className="space-y-2 text-center">
                       <h3 className="text-xl font-bold">Fiyori Alemseged</h3>
-                      <p className="text-sm text-primary font-medium">COO</p>
+                      <p className="text-sm text-primary font-medium">Co-Founder & COO</p>
                       <p className="text-sm text-muted-foreground">
                         With a background in business operations and project management, Fiyori ensures the seamless
                         delivery of our services to clients.
