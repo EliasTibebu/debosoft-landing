@@ -34,6 +34,8 @@
     --ring: 217 91% 53%; /* #2563EB bright blue from logo */
 
     --radius: 0.5rem;
+
+    --font-sans: var(--font-open-sans);
   }
 
   .dark {
@@ -74,6 +76,25 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-open-sans);
+    font-weight: 700;
+  }
+  p,
+  span,
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    font-family: var(--font-open-sans);
   }
 }
 
